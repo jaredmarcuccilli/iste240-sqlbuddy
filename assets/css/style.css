@@ -1,0 +1,400 @@
+html {
+	height: 100%;
+	background-color: #f5f5f5;
+}
+
+body {
+	margin: 0 20vw 0 20vw;
+	height: 100%;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	display:flex;
+	flex-direction:column;
+}
+
+.slideshowCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.border {
+    border: 10px solid #4372C4;
+}
+
+.astx {
+	color: red;
+}
+
+.question {
+	margin: 1em;
+}
+
+.questionheader {
+	font-size: 1em;
+}
+
+.questionanswer {
+	margin: .5em;
+}
+
+#MenuHeader {
+	margin: 2em auto ;
+	/* margin-top: 1em; */
+	/* margin-bottom: 2em; */
+	padding: .2em;
+	font-size: 2em;
+	text-align: center;
+	background: #ededed;
+	font-family: 'Roboto Slab', serif;
+	width: 80%;
+}
+
+.timestamp {
+	text-align: center;
+	margin-top: 1em;
+	width: auto;
+}
+
+#name {
+	padding: 15px;
+}
+#name text {
+	width: 100%;
+}
+#commentfield {
+	padding: 15px;
+}
+#commentfield textarea {
+	width: 100%;
+}
+
+h1 {
+	color: #f3f3f3;
+	margin: 0;
+	padding: 15px;
+	padding-top: 25px;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: #282828;
+	margin: 0;
+	padding: 25px;
+	font-size: 7vw;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+h3 {
+	#margin: 0;
+}
+
+p {
+	padding: 15px;
+}
+
+img {
+	width: 10vw;
+}
+
+.blue {
+	color: #4372C4;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.light {
+	font-weight: 100;
+	font-family: 'Roboto Light', sans-serif;
+}
+
+#copy {
+	color: #ededed;
+	width: 225px;
+	position:absolute;
+	bottom:0;
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 1.25em;
+}
+
+#right {
+	margin-left: 225px;
+	height: 100%;
+	background-color: #ededed;
+	position: relative;
+}
+
+#vertnav a {
+	color: #ededed;
+	text-decoration: none;
+	display: block;
+	padding: 15px;
+	font-size: 1.25em;
+}
+
+#vertnav a:hover {
+	color: #4372C4;
+	background-color: #ededed;
+}
+
+#vertnav a.current {
+	color: #4372C4;
+	background-color: #ededed;
+}
+
+#vertnav {
+	height: 100vh;
+	width: 225px;
+	background-color: #4372C4;
+	display: block;
+	position: fixed;
+}
+
+#hornav {
+	display: none;
+}
+
+.content {
+	color: #282828;
+	padding: 25px;
+	background-color: #ededed;
+	height: auto;
+}
+
+.references {
+	color: #282828;
+	padding: 25px;
+	background-color: #ededed;
+	height: auto;
+	padding-left: 45px;
+	text-indent: -20px;
+	word-break: break-word;
+}
+
+.imageleft {
+	display: block;
+	margin: 25px;
+	float: left;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #c9deff;
+	line-height: 0;
+}
+
+.imageright {
+	display: block;
+	margin: 25px;
+	float: right;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #c9deff;
+	line-height: 0;
+}
+
+.imagecenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #c9deff;
+	line-height: 0;
+	width: 70%;
+}
+
+.imagecenter img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 1366px) {
+	body { 
+		margin: 0; 
+		padding: 0; 
+	}
+	img {
+		width: 20vw;
+	}
+	h2 {
+		font-size: 12vw;
+	}	
+}
+
+@media only screen and (max-width: 768px) {
+	body { 
+		margin: 0; 
+		padding: 0; 
+	}
+	h1 {
+		display: block;
+		text-align: center;
+		padding: 25px;
+	}
+	h2 {
+		text-align: center;
+		font-size: 15vw;
+	}
+	#vertnav {
+		display: none;
+	}
+	#hornav {
+		background-color: #4372C4;
+		display: block;
+		position: relative;
+		text-align: center;
+		#padding: 25px;
+	}
+	#hornav a {
+		color: #ededed;
+		text-decoration: none;
+		display: block;
+		padding: 15px;
+	}
+	#hornav a:hover {
+		color: #4372C4;
+		background-color: #ededed;
+	}
+	#hornav a.current {
+		color: #4372C4;
+		background-color: #ededed;
+	}
+	#right {
+		margin: 0;
+	}
+	img {
+		width: 30vw;
+	}
+	#right {
+		flex: 1;
+	}
+}
+
+.centerRow {
+	text-align: center;
+	margin: 15px;
+}
+
+.btnRITLogin {
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 100;
+	padding: 15px;
+	background-color: #F36E21;
+	box-shadow: 1px 1px 5px 0px #000000;
+	text-shadow: 1px 1px 5px #000000;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	#width: 15vw;
+	text-align: center;
+}
+
+.btnRITLogin:hover {
+	background: #E0651F;
+	text-decoration: none;
+}
+
+.btnBlueLogin {
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 100;
+	padding: 15px;
+	background-color: #4372C4;
+	box-shadow: 1px 1px 5px 0px #000000;
+	text-shadow: 1px 1px 5px #000000;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	#width: 15vw;
+	text-align: center;
+}
+
+.btnBlueLogin:hover {
+	background: #365b9c;
+	text-decoration: none;
+}
+
+.inputBoxStyled { 
+	border-width:2px; 
+	padding:15px; 
+	font-size:20px; 
+	text-align:center; 
+	border-radius:8px; 
+	font-family:sans-serif; 
+	border-style:solid; 
+	border-color:#4372c4;  
+}
+
+*:focus {
+    outline: none;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	#width: 100%;
+	margin: 10px;
+	margin-left: 0;
+}
+
+th {
+	background-color: #4372C4;
+	color: white;
+}
+
+td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+fieldset {
+	margin: 10px;
+}
+
+input[type="text"] {
+	padding: .5em;
+	margin: .5em;
+}
+
+.example {
+    	border-style: dashed;
+    	padding: 1em;
+}
+.lesson {
+    	border-style: dashed;
+    	padding: 1em;
+}
+.lesson th, td {
+    	padding-right: 1em;
+    	padding-left: 1em;
+}
+.lesson table {
+    	font-family: 'Roboto', sans-serif;
+    	border-collapse: collapse;
+    	width: 100%;
+	margin: 0;
+}
+.lesson td, th {
+  	border: 1px solid #DDDDDD;
+  	text-align: left;
+  	padding: 8px;
+}
+.lesson tr:nth-child(even) {
+  	background-color: #DDDDDD;
+}
+
+table a {
+	color: #4372C4;
+}
